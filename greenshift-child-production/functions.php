@@ -42,5 +42,19 @@ function greenshift_child_coa_labs_assets() {
 add_action('wp_enqueue_scripts', 'greenshift_child_coa_labs_assets');
 
 /**
+ * Enqueue COA new tab handler script
+ */
+function greenshift_enqueue_coa_open_newtab(){
+    wp_enqueue_script(
+        'greenshift-coa-newtab',
+        get_stylesheet_directory_uri() . '/assets/js/coa-open-newtab.js',
+        array('jquery'),
+        '1.0.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'greenshift_enqueue_coa_open_newtab');
+
+/**
  * Add any custom functions below this line
  */
