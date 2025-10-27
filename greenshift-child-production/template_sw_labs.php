@@ -75,6 +75,9 @@ $hashhole_products = array_filter($coa_data, function($item) {
 });
 ?>
 
+<div class="wp-site-blocks">
+    <div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+
 <div class="skyworld-coa-labs">
     <!-- Flower Section -->
     <div class="coa-section">
@@ -492,5 +495,8 @@ jQuery(document).ready(function($) {
     }
 });
 </script>
+
+    </div>
+</div>
 
 <?php get_footer(); ?>
