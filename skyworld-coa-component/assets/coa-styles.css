@@ -1,0 +1,80 @@
+/**
+ * COA Labs Styles - Independent of theme
+ */
+
+.skyworld-coa-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.skyworld-coa-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.skyworld-coa-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.skyworld-coa-header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.skyworld-coa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.skyworld-coa-item {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skyworld-coa-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.skyworld-coa-item h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.25rem;
+}
+
+.skyworld-coa-item .coa-link {
+    display: inline-block;
+    background: #28a745;
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.skyworld-coa-item .coa-link:hover {
+    background: #218838;
+    color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skyworld-coa-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .skyworld-coa-header h1 {
+        font-size: 2rem;
+    }
+}

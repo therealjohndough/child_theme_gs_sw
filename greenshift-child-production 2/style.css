@@ -1,0 +1,389 @@
+/*
+Theme Name: Skylabs Greenshift Child
+Theme URI: https://skyworldcannabis.com
+Description: Child theme for Greenshift with custom COA labs template
+Author: Case Study
+Author URI: https://skyworldcannabis.com
+Template: greenshift
+Version: 1.0.0
+Text Domain: greenshift-child
+*/
+
+/* ============================================
+   SKYWORLD COA LABS STYLES
+   ============================================ */
+
+/* Main Container - Force Override Dark Theme */
+.skyworld-coa-labs, 
+.skyworld-coa-labs * { 
+    box-sizing: border-box !important; 
+}
+
+.skyworld-coa-labs { 
+    margin: 40px auto !important; 
+    max-width: 1200px !important; 
+    padding: 0 20px !important; 
+    background: #ffffff !important; 
+}
+
+/* Section Styles */
+.coa-section { 
+    margin-bottom: 60px !important; 
+    background: #ffffff !important; 
+    padding: 30px !important; 
+    border-radius: 12px !important; 
+}
+
+.coa-section h2 { 
+    font-size: 2rem !important; 
+    font-weight: 700 !important; 
+    margin-bottom: 30px !important; 
+    color: #1a1a1a !important; 
+    border-bottom: 3px solid #2c5f2d !important; 
+    padding-bottom: 15px !important; 
+    text-transform: uppercase !important; 
+    letter-spacing: 1px !important; 
+}
+
+/* Table Styles - Force White Background and Dark Text */
+.coa-table { 
+    overflow-x: auto !important; 
+    margin-bottom: 30px !important; 
+    border-radius: 12px !important; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important; 
+    background: #ffffff !important; 
+}
+
+.coa-table table { 
+    width: 100% !important; 
+    border-collapse: collapse !important; 
+    background: #ffffff !important; 
+}
+
+.coa-table table th { 
+    background: #2c5f2d !important; 
+    padding: 18px 15px !important; 
+    text-align: left !important; 
+    font-weight: 600 !important; 
+    color: #ffffff !important; 
+    font-size: 0.95rem !important; 
+    text-transform: uppercase !important; 
+    letter-spacing: 0.8px !important; 
+    border: none !important; 
+}
+
+.coa-table table td { 
+    padding: 18px 15px !important; 
+    border-bottom: 1px solid #e8e8e8 !important; 
+    vertical-align: middle !important; 
+    background: #ffffff !important; 
+    color: #1a1a1a !important; 
+}
+
+.coa-table table td strong { 
+    color: #1a1a1a !important; 
+    font-weight: 700 !important; 
+}
+
+.coa-table table tr { 
+    background: #ffffff !important; 
+}
+
+.coa-table table tr:hover { 
+    background: #f8fdf8 !important; 
+}
+
+.coa-table table tr:last-child td { 
+    border-bottom: none !important; 
+}
+
+/* Link Buttons */
+.coa-link { 
+    color: #2c5f2d !important; 
+    text-decoration: none !important; 
+    font-weight: 600 !important; 
+    padding: 8px 16px !important; 
+    border-radius: 6px !important; 
+    transition: all 0.3s ease !important; 
+    display: inline-block !important; 
+    border: 2px solid #2c5f2d !important; 
+    background: #ffffff !important; 
+    cursor: pointer !important; 
+    font-size: 0.9rem !important; 
+}
+
+.coa-link:hover, 
+.coa-link:focus { 
+    background: #2c5f2d !important; 
+    color: #ffffff !important; 
+    text-decoration: none !important; 
+    transform: translateY(-2px) !important; 
+    box-shadow: 0 4px 12px rgba(44, 95, 45, 0.3) !important; 
+    outline: none !important; 
+}
+
+/* Lightbox Styles */
+.skyworld-lightbox { 
+    position: fixed !important; 
+    top: 0 !important; 
+    left: 0 !important; 
+    width: 100% !important; 
+    height: 100% !important; 
+    background: rgba(0, 0, 0, 0.95) !important; 
+    z-index: 999999 !important; 
+    display: none !important; 
+    justify-content: center !important; 
+    align-items: center !important; 
+    opacity: 0 !important; 
+    visibility: hidden !important; 
+    transition: opacity 0.3s ease, visibility 0.3s ease !important; 
+}
+
+.skyworld-lightbox.active { 
+    opacity: 1 !important; 
+    visibility: visible !important; 
+    display: flex !important; 
+}
+
+.skyworld-lightbox-content { 
+    background: #ffffff !important; 
+    border-radius: 16px !important; 
+    padding: 0 !important; 
+    max-width: 95% !important; 
+    max-height: 95% !important; 
+    overflow: hidden !important; 
+    position: relative !important; 
+    transform: scale(0.8) !important; 
+    transition: transform 0.3s ease !important; 
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3) !important; 
+}
+
+.skyworld-lightbox.active .skyworld-lightbox-content { 
+    transform: scale(1) !important; 
+}
+
+.skyworld-lightbox-header { 
+    display: flex !important; 
+    justify-content: space-between !important; 
+    align-items: center !important; 
+    padding: 25px 30px !important; 
+    border-bottom: 2px solid #e8e8e8 !important; 
+    background: #f9f9f9 !important; 
+}
+
+.skyworld-lightbox-header h3 { 
+    margin: 0 !important; 
+    color: #1a1a1a !important; 
+    font-size: 1.5rem !important; 
+    font-weight: 700 !important; 
+}
+
+.skyworld-close-btn { 
+    background: #d32f2f !important; 
+    color: #ffffff !important; 
+    border: none !important; 
+    width: 44px !important; 
+    height: 44px !important; 
+    border-radius: 50% !important; 
+    font-size: 26px !important; 
+    font-weight: bold !important; 
+    cursor: pointer !important; 
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: center !important; 
+    transition: all 0.3s ease !important; 
+    line-height: 1 !important; 
+}
+
+.skyworld-close-btn:hover, 
+.skyworld-close-btn:focus { 
+    background: #b71c1c !important; 
+    transform: scale(1.1) !important; 
+    outline: none !important; 
+}
+
+#skyworld-pdf-container { 
+    padding: 30px !important; 
+    min-height: 500px !important; 
+    display: flex !important; 
+    align-items: center !important; 
+    justify-content: center !important; 
+    background: #fafafa !important; 
+}
+
+.skyworld-loading { 
+    text-align: center !important; 
+}
+
+.skyworld-loading p { 
+    color: #666666 !important; 
+    margin: 10px 0 0 !important; 
+    font-size: 1.1rem !important; 
+    font-weight: 500 !important; 
+}
+
+.skyworld-spinner { 
+    border: 5px solid #f3f3f3 !important; 
+    border-top: 5px solid #2c5f2d !important; 
+    border-radius: 50% !important; 
+    width: 50px !important; 
+    height: 50px !important; 
+    animation: skyworld-spin 1s linear infinite !important; 
+    margin: 0 auto 20px !important; 
+}
+
+@keyframes skyworld-spin { 
+    0% { transform: rotate(0deg); } 
+    100% { transform: rotate(360deg); } 
+}
+
+#skyworld-pdf-container iframe { 
+    width: 100% !important; 
+    height: 700px !important; 
+    border: none !important; 
+    border-radius: 8px !important; 
+}
+
+/* FAQ Section Styles */
+.coa-faq-section { 
+    background: #f9fdf9 !important; 
+    padding: 40px !important; 
+    border-radius: 12px !important; 
+    margin-top: 60px !important; 
+}
+
+.faq-container { 
+    max-width: 900px !important; 
+    margin: 0 auto !important; 
+}
+
+.faq-item { 
+    background: #ffffff !important; 
+    border-radius: 10px !important; 
+    margin-bottom: 15px !important; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important; 
+    overflow: hidden !important; 
+    transition: all 0.3s ease !important; 
+}
+
+.faq-item:hover { 
+    box-shadow: 0 4px 12px rgba(44, 95, 45, 0.15) !important; 
+}
+
+.faq-question { 
+    width: 100% !important; 
+    padding: 20px 25px !important; 
+    background: #ffffff !important; 
+    border: none !important; 
+    text-align: left !important; 
+    font-size: 1.05rem !important; 
+    font-weight: 600 !important; 
+    color: #1a1a1a !important; 
+    cursor: pointer !important; 
+    display: flex !important; 
+    justify-content: space-between !important; 
+    align-items: center !important; 
+    transition: all 0.3s ease !important; 
+}
+
+.faq-question span { 
+    color: #1a1a1a !important; 
+}
+
+.faq-question:hover { 
+    background: #f8fdf8 !important; 
+}
+
+.faq-question:hover span { 
+    color: #2c5f2d !important; 
+}
+
+.faq-question[aria-expanded="true"] { 
+    background: #f0f7f0 !important; 
+}
+
+.faq-question[aria-expanded="true"] span { 
+    color: #2c5f2d !important; 
+}
+
+.faq-icon { 
+    font-size: 1.8rem !important; 
+    font-weight: 300 !important; 
+    color: #2c5f2d !important; 
+    transition: transform 0.3s ease !important; 
+    line-height: 1 !important; 
+}
+
+.faq-question[aria-expanded="true"] .faq-icon { 
+    transform: rotate(45deg) !important; 
+}
+
+.faq-answer { 
+    max-height: 0 !important; 
+    overflow: hidden !important; 
+    transition: max-height 0.4s ease, padding 0.4s ease !important; 
+    background: #ffffff !important; 
+}
+
+.faq-answer.active { 
+    max-height: 500px !important; 
+    padding: 0 25px 25px 25px !important; 
+}
+
+.faq-answer p { 
+    margin: 0 !important; 
+    line-height: 1.7 !important; 
+    color: #444444 !important; 
+    font-size: 0.98rem !important; 
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .coa-section { 
+        padding: 20px !important; 
+    }
+    
+    .coa-section h2 { 
+        font-size: 1.5rem !important; 
+    }
+    
+    .coa-table table th, 
+    .coa-table table td { 
+        padding: 12px 10px !important; 
+        font-size: 0.85rem !important; 
+    }
+    
+    .coa-link { 
+        padding: 6px 12px !important; 
+        font-size: 0.8rem !important; 
+    }
+    
+    .skyworld-lightbox-content { 
+        margin: 10px !important; 
+        max-width: calc(100% - 20px) !important; 
+        max-height: calc(100% - 20px) !important; 
+    }
+    
+    #skyworld-pdf-container { 
+        padding: 20px !important; 
+    }
+    
+    #skyworld-pdf-container iframe { 
+        height: 400px !important; 
+    }
+    
+    .coa-faq-section { 
+        padding: 25px 20px !important; 
+    }
+    
+    .faq-question { 
+        padding: 15px 18px !important; 
+        font-size: 0.95rem !important; 
+    }
+    
+    .faq-answer.active { 
+        padding: 0 18px 20px 18px !important; 
+    }
+}
+
+/* Your other custom styles can go below this line */

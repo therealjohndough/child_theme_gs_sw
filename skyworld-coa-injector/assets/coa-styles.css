@@ -1,0 +1,162 @@
+/**
+ * COA Injector Styles - Works with any theme
+ */
+
+.skyworld-coa-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.skyworld-coa-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.skyworld-coa-header h2 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.skyworld-coa-header p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+.skyworld-coa-category {
+    margin: 3rem 0;
+}
+
+.skyworld-coa-category h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #28a745;
+    padding-bottom: 0.5rem;
+}
+
+.skyworld-coa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.skyworld-coa-item {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skyworld-coa-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.skyworld-coa-item h4 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.skyworld-coa-item .coa-link {
+    display: inline-block;
+    background: #28a745;
+    color: white !important;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none !important;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.skyworld-coa-item .coa-link:hover {
+    background: #218838 !important;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.skyworld-coa-faq {
+    max-width: 800px;
+    margin: 4rem auto 2rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e9ecef;
+}
+
+.skyworld-coa-faq h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.faq-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #28a745;
+}
+
+.faq-item h4 {
+    margin-bottom: 0.75rem;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.faq-item p {
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skyworld-coa-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .skyworld-coa-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .skyworld-coa-container {
+        padding: 0 0.5rem;
+    }
+}
+
+/* Dark theme compatibility */
+body.dark-theme .skyworld-coa-item,
+.dark .skyworld-coa-item {
+    background: #2c3e50;
+    border-color: #34495e;
+    color: #ecf0f1;
+}
+
+body.dark-theme .skyworld-coa-item h4,
+.dark .skyworld-coa-item h4 {
+    color: #ecf0f1;
+}
+
+body.dark-theme .faq-item,
+.dark .faq-item {
+    background: #34495e;
+    color: #ecf0f1;
+}
+
+body.dark-theme .faq-item h4,
+.dark .faq-item h4 {
+    color: #ecf0f1;
+}
